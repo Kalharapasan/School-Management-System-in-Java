@@ -8,7 +8,7 @@ package school.management.system;
  *
  * @author Kalhara
  */
-public class SchoolManagementSystem {
+public class Main {
 
     /**
      * @param args the command line arguments
