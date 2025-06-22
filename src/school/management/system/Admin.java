@@ -1,13 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package school.management.system;
-
-/**
- *
- * @author Kalhara
- */
 public class Admin {
-    
+    private int adminId;
+    private String username;
+    private String password;
+
+    public Admin(int adminId, String username, String password) {
+        this.adminId = adminId;
+        this.username = username;
+        this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("ID: %d, Username: %s", adminId, username);
+    }
 }
