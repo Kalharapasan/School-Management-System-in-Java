@@ -1,13 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package school.management.system;
-
-/**
- *
- * @author Kalhara
- */
 public class Teacher {
-    
+    private int teacherId;
+    private String firstName;
+    private String lastName;
+
+    public Teacher(int teacherId, String firstName, String lastName) {
+        this.teacherId = teacherId;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("ID: %d, Name: %s %s", teacherId, firstName, lastName);
+    }
 }
